@@ -23,6 +23,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>org.jboss</groupId>
+        <artifactId>jboss-parent</artifactId>
+        <version>18</version>
+    </parent>
+
     <groupId>org.jboss.logging</groupId>
     <artifactId>commons-logging-jboss-logging</artifactId>
     <version>1.0.0.Final-SNAPSHOT</version>
@@ -32,15 +38,9 @@
     <url>http://www.jboss.org</url>
     <description>Apache Commons Logging to JBoss Logging implementation</description>
     <scm>
-        <connection>scm:git:git://github.com/jboss-logging/jboss-logging.git</connection>
-        <url>https://github.com/jboss-logging/jboss-logging</url>
+        <connection>scm:git:git://github.com/jboss-logging/commons-logging-jboss-logging.git</connection>
+        <url>https://github.com/jboss-logging/commons-logging-jboss-logging</url>
     </scm>
-
-    <parent>
-        <groupId>org.jboss</groupId>
-        <artifactId>jboss-parent</artifactId>
-        <version>18</version>
-    </parent>
 
     <licenses>
         <license>
@@ -51,7 +51,6 @@
     </licenses>
 
     <properties>
-        <version.commons-logging>1.2</version.commons-logging>
         <version.junit>4.12</version.junit>
         <version.org.jboss.logging.jboss-logging>3.3.1.Final</version.org.jboss.logging.jboss-logging>
         <version.org.jboss.logmanager.jboss-logmanager>1.5.9.Final</version.org.jboss.logmanager.jboss-logmanager>
